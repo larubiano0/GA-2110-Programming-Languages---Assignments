@@ -2,6 +2,7 @@
 (provide (struct-out bt-node) (struct-out bt-leaf) (struct-out bt-empty))
 (provide (struct-out plus-node) (struct-out times-node) (struct-out int-leaf))
 (provide palindrome-list eval-tree check-bt ml-split piles-insert)
+(require string-tools)
 
 ; For each problem, you can find additional test cases and examples by looking in ps1-test.rkt.
 ; The general format of each test is of the form
@@ -34,7 +35,12 @@
 ; Example: when s is "The gig was a gag, a joke.", (palindrome-list s) should return
 ; '("gig" "a" "gag" "a").
 
-(define (palindrome-list s) '())
+(define (plain-is-palindrome? word)
+  (cond
+    []))
+
+(define (palindrome-list s) ())
+; accumulator of indicators using helper func
 
 
 ;;;;;;;;; Problem 2 ;;;;;;;;;
